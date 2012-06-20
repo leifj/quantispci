@@ -8,4 +8,4 @@ Standards-Version: 3.8.1
 Package: quantispci-dkms
 Architecture: all
 Depends: dkms (>= 1.95), ${misc:Depends}
-Description: quantispci-dkms driver in DKMS format.
+Description: A DKMS format driver for the Quantis PCI quantum random number generator.
