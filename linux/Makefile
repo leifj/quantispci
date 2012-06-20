@@ -8,6 +8,8 @@ ifneq ($(PATCHLEVEL),)
 include $(src)/Kbuild
 else
 
+modules: all
+
 all::
 	$(MAKE) -C $(KDIR) M=$(CURDIR) V=$(V) modules
 
