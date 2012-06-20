@@ -2,5 +2,5 @@ quantispci-dkms (11.12.13) stable; urgency=low
 
   * Automatically packaged by DKMS.
 
- -- Dynamic Kernel Modules Support Team <pkg-dkms-maint@lists.alioth.debian.org>  Wed, 20 Jun 2012 16:12:35 +0200
+ -- Leif Johansson <leifj@sunet.se> Wed, 20 Jun 2012 16:12:35 +0200
 
