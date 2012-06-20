@@ -1,4 +1,4 @@
-V ?= 0
+V ?= 1
 MDIR := extra
 
 KVER ?= $(shell uname -r)
