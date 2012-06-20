@@ -1,4 +1,4 @@
-quantispci-dkms-dkms (11.12.13) stable; urgency=low
+quantispci-dkms (11.12.13) stable; urgency=low
 
   * Automatically packaged by DKMS.
 
