@@ -24,4 +24,3 @@ clean::
 endif
 
 install::
-	/sbin/depmod -a
