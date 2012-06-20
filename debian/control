@@ -2,7 +2,7 @@ Source: quantispci-dkms
 Section: misc
 Priority: optional
 Maintainer: Leif Johansson <leifj@sunet.se>
-Build-Depends: debhelper (>= 7), dkms, quilt, linux-headers-generic
+Build-Depends: debhelper (>= 7), cdbs, dkms, quilt, linux-headers-generic
 Standards-Version: 3.8.1
 
 Package: quantispci-dkms
