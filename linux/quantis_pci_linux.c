@@ -221,7 +221,7 @@ static struct file_operations quantis_fops =
   .read     =   quantis_read,     /* Read method */
   /*.write    =   quantis_write,*/    /* Write method */
   /*.llseek   =   quantis_llseek,*/   /* Seek method */
-  .ioctl    =   quantis_ioctl,    /* Ioctl method */
+  .compat_ioctl    =   quantis_ioctl,    /* Ioctl method */
 };
 
 

@@ -67,7 +67,7 @@ check_supported_os:
 			echo "GNU/Linux is no more supported!"  \
 			false  \
 			;;  \
-		linux2.6*)  \
+		linux2.6*|linux3*)  \
 			echo "Found GNU/Linux compatible platform"  \
 			;;  \
 		"solaris5.10")  \
