@@ -85,12 +85,12 @@ check_supported_os:
 ### Build modules ###
 modules: check_supported_os
 	@cd `$(KERNEL_NAME_CMD)` ;  \
-	$(MAKE) modules
+	$(MAKE) DESTDIR=$(DESTDIR) KVER=$(KVER) KDIR=$(KDIR) MDIR=$(MDIR) PATCHLEVEL=$(PATCHLEVEL) modules
 
 ### Install modules in system directories ###
 install: modules
 	@cd `$(KERNEL_NAME_CMD)` ;  \
-	$(MAKE) DESTDIR=$(DESTDIR) install
+	$(MAKE) DESTDIR=$(DESTDIR) KVER=$(KVER) KDIR=$(KDIR) MDIR=$(MDIR) PATCHLEVEL=$(PATCHLEVEL) install
 
 modules_install: install
 
