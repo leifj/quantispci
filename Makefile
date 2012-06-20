@@ -90,7 +90,7 @@ modules: check_supported_os
 ### Install modules in system directories ###
 install: modules
 	@cd `$(KERNEL_NAME_CMD)` ;  \
-	$(MAKE) install
+	$(MAKE) DESTDIR=$(DESTDIR) install
 
 modules_install: install
 

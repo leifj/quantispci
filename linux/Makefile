@@ -62,11 +62,11 @@ all: modules
 
 ### Build modules ###
 modules: 
-	$(MAKE) -C /lib/modules/$(KERNELVERSION)/build M=$(PWD) modules
+	$(MAKE) -C $(DESTDIR)/lib/modules/$(KERNELVERSION)/build M=$(PWD) modules
 
 ### Install modules ###
 install: modules
-	@$(MAKE) -C /lib/modules/$(KERNELVERSION)/build M=$(PWD) modules_install
+	@$(MAKE) -C $(DESTDIR)/lib/modules/$(KERNELVERSION)/build M=$(PWD) modules_install
 	@/sbin/depmod -a
 
 modules_install: install
@@ -77,7 +77,7 @@ load: install
 
 ### Remove generates files ###
 clean:
-	@$(MAKE) -C /lib/modules/$(KERNELVERSION)/build M=$(PWD) clean
+	@$(MAKE) -C $(DESTDIR)/lib/modules/$(KERNELVERSION)/build M=$(PWD) clean
 	@rm -f *~
 
 
