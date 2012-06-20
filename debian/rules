@@ -33,7 +33,7 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	$(MAKE) DESTDIR=$(CURDIR)/debian/$(DEB_NAME)-dkms NAME=$(NAME) VERSION=$(VERSION) install
+	$(MAKE) DESTDIR=$(CURDIR)/debian/$(NAME)-dkms NAME=$(NAME) VERSION=$(VERSION) install
 
 binary-arch: build install
 
