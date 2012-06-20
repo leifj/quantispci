@@ -1,0 +1,10 @@
+# Quantis Loadable Kernel Module
+
+#CFLAGS += -DDEBUG
+
+.PATH:  ${.CURDIR}
+KMOD    = quantis
+SRCS    = quantis_pci_freebsd.c
+SRCS    += device_if.h bus_if.h pci_if.h
+
+.include <bsd.kmod.mk>

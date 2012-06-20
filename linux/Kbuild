@@ -1,0 +1,10 @@
+# List of modules
+obj-m := quantis_pci.o
+
+# quantis_pci module sources and objects
+quantis_pci-srcs := \
+	quantis_pci_linux.c
+
+quantis_pci-objs := $(quantis_pci-srcs:.c=.o)
+
+EXTRA_CFLAGS := -I../common
