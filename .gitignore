@@ -1,2 +1,10 @@
 *.o
 *.ko
+*.log
+*-stamp
+*.o.*
+*.ko.*
+*.mod.c
+modules.order
+.tmp_versions
+Module.symvers
