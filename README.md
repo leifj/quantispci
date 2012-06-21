@@ -12,7 +12,6 @@ building
 # cd quantispci
 # git checkout debian
 # git-buildpackage -uc -us
-
 ```
 
 I've used the docs at http://tjworld.net/wiki/Linux/Ubuntu/Kernel/BuildDebianDKMSPackage as
