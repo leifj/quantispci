@@ -10,6 +10,7 @@ building
 
 ```bash
 # cd quantispci
+# git checkout debian
 # git-buildpackage -uc -us
 
 ```
