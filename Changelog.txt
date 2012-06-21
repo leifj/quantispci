@@ -1,9 +1,477 @@
-??? ??? ?? 2010
-    * version 2.0 released.
-    - linux: added udev support. Devices are automatically crated to /dev/quantisX
-    - Kernel 2.4 series are not supported anymore. You can still use old 
-     version (1.1) on 2.4 kernels.
+﻿
+   .=======================.
+===|   Quantis ChangeLog   |===================================================
+   °=======================°
+
+This is a non-exhaustive (but still near complete) changelog for the Quantis
+Software Package.
 
 
-Fri Jan 18 2008
-    * version 1.1 released.  Baseline for this ChangeLog.
+Legend:
+  +  ->  Addition
+  -  ->  Removed
+  ^  ->  Change
+  #  ->  Bug Fix
+  !  ->  Note
+
+
+   .=====================.
+===|    9/December/2011     |=====================================================
+   °=====================°
+
+      .------------------------.
+------|  Quantis Library v2.9  |-----------------------------------------------
+      °------------------------°
+
++ Implemented the C++11 random_device interface to use Quantis
++ Quantis can now be used on Solaris and FreeBSD
++ The VB and C# Samples are supported under Visual Studio 2010/.NET 4.0
+
+
+      .----------------------.
+------|  Documentation v2.8  |-------------------------------------------------
+      °----------------------°
+
+^ Improved sections concerning Sample compilation
++ Added documentation concerning installation on Solaris and FreeBSD
++ Added documentation for C++11
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.8
+  * EasyQuantis:                   1.4
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.9
+  * Unix PCI Driver:               2.4
+  
+  
+   .=====================.
+===|    12/July/2011     |=====================================================
+   °=====================°
+
+      .------------------------.
+------|  EasyQuantis 1.4       |-----------------------------------------------
+      °------------------------°
+
+# Fix missing dll in the EasyQuantis Setup installation
+
+
+      .------------------------.
+------|  Quantis Library v2.8  |-----------------------------------------------
+      °------------------------°
+
+# Fix error control with Quantis-USB devices
+
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.7
+  * EasyQuantis:                   1.4
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.8
+  * Unix PCI Driver:               2.4
+  
+  
+   .=====================.
+===|     20/May/2011     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.7  |-------------------------------------------------
+      °----------------------°
+
++ Added information for Mac OSX.
+ 
+
+      .------------------------.
+------|  Quantis Library v2.7  |-----------------------------------------------
+      °------------------------°
+
++ Added support for Quantis USB on Mac OSX.
+
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.7
+  * EasyQuantis:                   1.4
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.7
+  * Unix PCI Driver:               2.4
+
+
+   .=====================.
+===|     19/Apr/2011     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.6  |-------------------------------------------------
+      °----------------------°
+
+^ Corrected minor mistakes and rephrased a few sentences for ease of 
+  understanding.
+
+      .------------------------.
+------|  Quantis Library v2.6  |-----------------------------------------------
+      °------------------------°
+
+# Configuration descriptor obtained from libusb_get_config_descriptor() is now 
+  correctly freed using libusb_free_config_descriptor(), fixing a memory leak 
+  on Unix systems when using Quantis USB devices.
+# Fixed freeing order on QuantisUsbClose method in QuantisUsb_Windows.cpp, 
+  fixing a memory leak on Microsoft Windows when using Quantis USB devices.
+^ Better memory freeing on errors.
+
+      .-------------------.
+------|  Wrapper/Samples  |----------------------------------------------------
+      °-------------------°
+
+# Fixed C# and VB.NET Quantis classes which crash when handling unmanaged 
+  Quantis C DLL char* data on 64-bit systems (when application is compiled 
+  in 64-bit).
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.6
+  * EasyQuantis:                   1.4
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.6
+  * Unix PCI Driver:               2.4
+
+
+   .=====================.
+===|     12/Jan/2011     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.5  |-------------------------------------------------
+      °----------------------°
+
++ Added details on the QuantisGetManufacturer method.
+
+      .--------------------.
+------|  EasyQuantis v1.4  |---------------------------------------------------
+      °--------------------°
+
++ Display Manufacturer's name when displaying Quantis USB devices info.
+
+      .------------------------.
+------|  Quantis Library v2.5  |-----------------------------------------------
+      °------------------------°
+
++ Added QuantisGetManufacturer method (wrappers and samples have been updated 
+  accordingly).
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.5
+  * EasyQuantis:                   1.4
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.5
+  * Unix PCI Driver:               2.4
+
+
+   .=====================.
+===|     08/Oct/2010     |=====================================================
+   °=====================°
+
+      .------------------------.
+------|  Unix PCI Driver v2.4  |-----------------------------------------------
+      °------------------------°
+
+# Fixed 'kobject_add failed for Quantis PCI/PCIe RNG driver (-13)' module crash
+  on module load.
++ Improved cleanup and resources freeing on module crash.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.4
+  * EasyQuantis:                   1.3
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.4
+  * Unix PCI Driver:               2.4
+
+   .=====================.
+===|     20/Sep/2010     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.4  |-------------------------------------------------
+      °----------------------°
+
++ Added instruction to install Quantis on Red Had Enterprise Linux and CentOS
+  distributions.
+
+      .------------------------.
+------|  Unix PCI Driver v2.3  |-----------------------------------------------
+      °------------------------°
+
+# Fixed "__you_cannot_kmalloc_that_much" compilation error on RedHat/CentOS 
+  distributions.
++ Added idq-quantis-rhel.rules with UDEV rules for RedHat/CentOS distributions.
+
+      .-----------------------------------.
+------|  Microsoft Windows USB Driver 2.1 |------------------------------------
+      °-----------------------------------°
+
++ Added missing signature certificate.
+! Driver version was not changed.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.4
+  * EasyQuantis:                   1.3
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.4
+  * Unix PCI Driver:               2.3
+
+   .=====================.
+===|     29/Jun/2010     |=====================================================
+   °=====================°
+
+      .------------------------.
+------|  Quantis Library v2.4  |-----------------------------------------------
+      °------------------------°
+
++ Added paths for FreeBSD in FindJNI.cmake.
+! Library version was not changed.
+
+      .-----------.
+------|  Samples  |------------------------------------------------------------
+      °-----------°
+
++ Added QuantisProvider class which extends base Provider class.
++ Added QuantisSecureRandom class which extends base SecureRandomSpi class.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.3
+  * EasyQuantis:                   1.3
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.4
+  * Unix PCI Driver:               2.2
+
+
+   .=====================.
+===|     28/Jun/2010     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.3  |-------------------------------------------------
+      °----------------------°
+
++ Added scaling algorithms details.
+^ Improved EasyQuantis installation description on Linux.
++ Added Troubleshooting appendix.
+
+      .--------------------.
+------|  EasyQuantis v1.3  |---------------------------------------------------
+      °--------------------°
+
+# Fixed wrong text message during number generation.
+
+      .------------------------.
+------|  Quantis Library v2.4  |-----------------------------------------------
+      °------------------------°
+
+# Scaling of integral values updated with unbiased algorithm.
+^ Reading floating point values now returns values between 0.0 (inclusive) and 
+  1.0 (exclusive) as done by majority of (P)RNGs.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.3
+  * EasyQuantis:                   1.3
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.4
+  * Unix PCI Driver:               2.2
+
+
+   .=====================.
+===|     27/May/2010     |=====================================================
+   °=====================°
+
+      .------------------------.
+------|  Unix PCI Driver v2.2  |-----------------------------------------------
+      °------------------------°
+
+# Fixed FreeBSD check in main Makefile.
+# Fixed wrong #define added in driver v2.1 affecting Quantis PCI-4 devices.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.2
+  * EasyQuantis:                   1.2
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.3
+  * Unix PCI Driver:               2.2
+
+
+   .=====================.
+===|     25/May/2010     |=====================================================
+   °=====================°
+
+      .--------------------.
+------|  EasyQuantis v1.2  |---------------------------------------------------
+      °--------------------°
+
+# Fixed compilation on FreeBSD.
+# Fixed compilation on Solaris.
+
+      .------------------------.
+------|  Quantis Library v2.3  |-----------------------------------------------
+      °------------------------°
+
+# Fixed compilation on FreeBSD.
+# Fixed compilation on Solaris.
+
+      .------------------------.
+------|  Unix PCI Driver v2.1  |-----------------------------------------------
+      °------------------------°
+
++ Added FreeBSD support.
++ Added Solaris support.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.2
+  * EasyQuantis:                   1.2
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.3
+  * Unix PCI Driver:               2.1
+
+
+   .=====================.
+===|     30/Apr/2010     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.2  |-------------------------------------------------
+      °----------------------°
+
+# In Quantis PCI Linux driver installation section: fixed a wrong path.
++ In Quantis PCI Linux driver installation section: and added two sub-sections.
+^ Updated EasyQuantis installation procedure under Linux.
+
+      .------------------------.
+------|  Quantis Library v2.2  |-----------------------------------------------
+      °------------------------°
+
++ Added compiled version for 64-bit Linux systems.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.2
+  * EasyQuantis:                   1.1
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.2
+  * Unix PCI Driver:               2.0
+
+
+   .=====================.
+===|     26/Apr/2010     |=====================================================
+   °=====================°
+
+      .----------------------.
+------|  Documentation v2.1  |-------------------------------------------------
+      °----------------------°
+
++ Added EasyQuantis command line section.
++ Added answers in the FAQ.
+
+      .--------------------.
+------|  EasyQuantis v1.1  |---------------------------------------------------
+      °--------------------°
+
++ Added command line interface.
+# Correctly displaying paths in Microsoft Windows.
+^ Code change: moved GenerateFile from EasyQuantisGuiMain.cpp to 
+  Quantis2File.cpp
+
+      .------------------------.
+------|  Quantis Library v2.2  |-----------------------------------------------
+      °------------------------°
+
+# On Windows: using explicit linking to WinUSB.dll (part of Quantis USB driver)
+  to allow to use the Quantis library even if WinUSB.dll is not installed on 
+  the system.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.1
+  * EasyQuantis:                   1.1
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.2
+  * Unix PCI Driver:               2.0
+
+
+   .=====================.
+===|     09/Apr/2010     |=====================================================
+   °=====================°
+
+Baseline for this ChangeLog.
+
+      .------------.
+------|  Versions  |-----------------------------------------------------------
+      °------------°
+
+Versions of software/documents included in this package:
+  * Documentation:                 2.0
+  * EasyQuantis:                   1.0
+  * Microsoft Windows PCI Driver:  5.0
+  * Microsoft Windows USB Driver:  2.1
+  * Quantis library:               2.1
+  * Unix PCI Driver:               2.0
+
+

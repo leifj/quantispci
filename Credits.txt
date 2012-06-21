@@ -1,0 +1,26 @@
+
+   .==============================.
+===|   Quantis Software Credits   |============================================
+   °==============================°
+
+Quantis software is an open source software suite written for the 
+Quantis Random Number Generator.
+
+The Quantis software is released under the dual BSD/GPL license (see 
+License.txt).
+
+ID Quantique would like to thank following people who have offered help, 
+support and/or code to ID Quantique.
+
+* Alain Aubord <alain.aubord@sourire.ch>
+  - Developed Quantis PCI driver for Microsofd Windows
+  - Updated Quantis PCI driver for SolariS Sparc
+  - Helped porting Quantis library and EasyQuantis on Solaris Sparc
+  - Provided a Mac version of the Quanti software
+
+* Alex Dupre <ale@FreeBSD.org>
+  - Updated Quantis PCI driver for reeBSD
+  - Ported Quantis library and EasyQuantis on FreeBSD
+  - Fixed several bugs
+  - FreeBSD mantainer
+
